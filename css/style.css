@@ -432,12 +432,12 @@ body::-webkit-scrollbar-track {
 
 /* SECTION 3_PUBLISHING */
 #publishing {
-	height: 1750vh;
+	height: 1850vh;
 	z-index: 100;
 }
 
 #publishing .inner3 {
-	width: 900%;
+	width: 1000%;
 	height: 100vh;
 	margin-left: 5%;
 	position: fixed;
@@ -445,7 +445,7 @@ body::-webkit-scrollbar-track {
 	top: 200px;
 }
 #publishing .container {
-	width: 900%;
+	width: 1000%;
 	height: 100vh;
 	margin-left: 5%;
 	position: fixed;
