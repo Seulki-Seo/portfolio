@@ -14,7 +14,7 @@ $(window).scroll(function () {
         $("#header").removeClass("color");
     }
 
-    /* 네비 하단 라인 색상 변화 */
+    /* 네비 하단 라인 색상 변화 및 ABOUT, CONTACT 자연스럽게 나타나게 */
     if (scr < abo_h) { //home 라인
         $(".gnb li").removeClass("on");
         $(".gnb #h").addClass("on");

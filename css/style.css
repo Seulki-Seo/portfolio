@@ -702,7 +702,7 @@ body::-webkit-scrollbar-track {
 	z-index: 201;
 }
 
-/* TOP */
+/* TOP, PROGRESS BAR */
 aside {
 	position: relative;
 }
