@@ -133,7 +133,7 @@ body::-webkit-scrollbar-track {
 	color: #fff;
 }
 #about {
-	background-color: #ededed;
+	background-color: rgba(250, 250, 250, 1);
 }
 #graphic,
 #publishing,
@@ -160,7 +160,7 @@ body::-webkit-scrollbar-track {
 	background: #fff;
 	color: #444;
 	line-height: 50px;
-	width: 230px;
+	width: 220px;
 	height: 50px;
 	border: 1px solid rgba(68, 68, 68, 0.4);
 	border-radius: 30px;
@@ -178,7 +178,8 @@ body::-webkit-scrollbar-track {
 
 #publishing .btn_area,
 #script .btn_area {
-	margin-top: 25px;
+	margin-top: 50px;
+	min-width: 490px;
 }
 #publishing .view_btn,
 #script .view_btn {
@@ -308,18 +309,18 @@ body::-webkit-scrollbar-track {
 }
 
 #home .ball1 {
-	opacity: 0.1;
+	opacity: 0.07;
 	position: relative;
 	right: -1300px;
 	bottom: -150px;
-	animation: ball1-1 2s linear infinite alternate;
+	animation: ball1-1 3s linear infinite alternate;
 }
 #home .ball2 {
-	opacity: 0.2;
+	opacity: 0.15;
 	position: relative;
 	right: -25px;
 	bottom: -330px;
-	animation: ball1-2 2s linear infinite alternate;
+	animation: ball1-2 3s linear infinite alternate;
 }
 
 #home .text {
@@ -379,7 +380,6 @@ body::-webkit-scrollbar-track {
 	display: flex;
 	position: relative;
 	top: 200px;
-	left: -100%;
 	opacity: 0;
 }
 
@@ -389,7 +389,7 @@ body::-webkit-scrollbar-track {
 }
 #about .intro_txt {
 	padding-top: 50px;
-	width: 805px;
+	width: 790px;
 }
 #about .intro_txt p:nth-of-type(2) {
 	width: 600px;
@@ -400,7 +400,7 @@ body::-webkit-scrollbar-track {
 	margin-left: 150px;
 }
 #about .skill h3 {
-	font-size: 4.5rem;
+	font-size: 4rem;
 	position: relative;
 }
 #about .skill h3::after {
@@ -425,19 +425,19 @@ body::-webkit-scrollbar-track {
 	position: relative;
 }
 #about .skill_list > li h4 {
-	font-size: 2rem;
+	font-size: 2.4rem;
 	padding-bottom: 10px;
 	position: relative;
 }
 
 /* SECTION 3_PUBLISHING */
 #publishing {
-	height: 1850vh;
+	height: 1800vh;
 	z-index: 100;
 }
 
 #publishing .inner3 {
-	width: 1000%;
+	width: 800%;
 	height: 100vh;
 	margin-left: 5%;
 	position: fixed;
@@ -462,19 +462,19 @@ body::-webkit-scrollbar-track {
 	align-items: center;
 }
 #publishing .publi_cont {
-	width: 90%;
+	width: 85%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 #publishing .tit .sub {
-	font-size: 1.6rem;
+	font-size: 1.7rem;
 	font-family: "lemon", "MalgunGothic", "Dotum", sans-serif;
 }
 #publishing .tit .main {
-	font-size: 4.5rem;
-	padding: 15px 0 30px;
+	font-size: 4.3rem;
+	padding: 5px 0 30px;
 }
 
 #publishing article {
@@ -482,7 +482,7 @@ body::-webkit-scrollbar-track {
 }
 
 #publishing .desc_list li {
-	padding-bottom: 25px;
+	padding: 0 60px 25px 0;
 }
 
 #publishing .desc_list h4 {
@@ -491,13 +491,13 @@ body::-webkit-scrollbar-track {
 	font-family: "IBM Plex Sans KR", "MalgunGothic", "Dotum", sans-serif;
 	padding-bottom: 5px;
 }
-#publishing .desc_list p {
+#publishing .desc_list span {
 	font-size: 1.8rem;
-	width: 370px;
 }
-#publishing .desc_list p:nth-of-type(2),
-#publishing .desc_list p:nth-of-type(4) {
+#publishing .desc_list span:nth-of-type(2),
+#publishing .desc_list span:nth-of-type(4) {
 	font-size: 1.5rem;
+	margin-left: 10px;
 }
 
 #publishing .pic img {
@@ -586,6 +586,7 @@ body::-webkit-scrollbar-track {
 }
 
 #script .desc p {
+	width: 450px;
 	padding-bottom: 25px;
 }
 
@@ -637,14 +638,14 @@ body::-webkit-scrollbar-track {
 }
 #contact .contact_list .sub {
 	font-size: 2.2rem;
-	transition: 0.5s;
+	transition: 0.3s;
 	padding: 5px;
 	border-radius: 10px;
 }
 #contact .contact_list .sub:hover {
+	background-color: rgba(255, 255, 255, 1);
+	color: #111;
 	text-decoration: underline;
-	background-color: #fff;
-	color: #444;
 }
 
 /* CONTACT_ANIMATION_BALL */
@@ -677,18 +678,18 @@ body::-webkit-scrollbar-track {
 	}
 }
 #contact .ball1 {
-	opacity: 0.1;
+	opacity: 0.07;
 	position: relative;
 	right: 350px;
 	bottom: -180px;
-	animation: ball2-1 2s linear infinite alternate;
+	animation: ball2-1 3s linear infinite alternate;
 }
 #contact .ball2 {
-	opacity: 0.2;
+	opacity: 0.15;
 	position: relative;
 	right: 670px;
 	bottom: -370px;
-	animation: ball2-2 2s linear infinite alternate;
+	animation: ball2-2 3s linear infinite alternate;
 }
 
 /* FOOTER */
@@ -700,6 +701,10 @@ body::-webkit-scrollbar-track {
 	font-size: 1.4rem;
 	color: #d9d9d9;
 	z-index: 201;
+	text-align: center;
+}
+#footer small:nth-of-type(1) {
+	display: block;
 }
 
 /* TOP, PROGRESS BAR */
@@ -708,16 +713,16 @@ aside {
 }
 #top {
 	position: fixed;
-	right: 30px;
-	bottom: 30px;
+	right: 40px;
+	bottom: 40px;
 	z-index: 11;
 	background-color: rgba(0, 0, 0, 0.5);
 	display: none;
 	cursor: pointer;
 }
 #top svg {
-	width: 30px;
-	height: 23px;
+	width: 35px;
+	height: 28px;
 	fill: #fff;
 }
 
@@ -726,7 +731,7 @@ aside {
 	left: 0;
 	top: 0;
 	width: 0;
-	height: 5px;
+	height: 3px;
 	background-color: #222;
 	z-index: 500;
 }

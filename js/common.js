@@ -18,7 +18,7 @@ $(window).scroll(function () {
     if (scr < abo_h) { //home 라인
         $(".gnb li").removeClass("on");
         $(".gnb #h").addClass("on");
-        $("#about .about_wrap").stop().animate({ left: 0, opacity: 1 }, 600);
+        $("#about .about_wrap").stop().animate({ opacity: 1 }, 600);
     } else if (scr >= abo_h && scr < pub_h) { //about 라인
         $(".gnb li").removeClass("on");
         $(".gnb #a").addClass("on");
