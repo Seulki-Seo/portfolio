@@ -1,0 +1,161 @@
+/* 웹 폰트 */
+@import "https://webfontworld.github.io/pretendard/Pretendard.css";
+
+@mixin responsive($w) {
+	@media(max-width: $w){
+		@content;
+	}
+}
+@mixin flex() {
+	display: flex;
+	align-items: center;
+}
+
+/* 초기화 및 상속 */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+span {
+	display: inline-block;
+}
+i {
+	display: inline-block;
+}
+strong {
+	display: inline-block;
+}
+input {
+	vertical-align: middle;
+	border-radius: 0;
+	appearance: none;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+select {
+	vertical-align: middle;
+	border-radius: 0;
+	appearance: none;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+button {
+	vertical-align: middle;
+	border-radius: 0;
+	appearance: none;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	max-width: 100%;
+}
+video {
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	line-height: 1.4;
+	font-family: "SUIT", "MalgunGothic", sans-serif;
+	color: #444;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.8rem;
+	font-family: "SUIT", "MalgunGothic", sans-serif;
+	line-height: 1.5;
+	&::-webkit-scrollbar {
+		width: 15px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #444;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: #ededed;
+	}
+}
+.clearfix {
+	&::before {
+		content: "";
+		display: block;
+	}
+	&::after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+/* 너비별 hidden 처리 */
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}
+@media (max-width: 767px) {
+    .hidden-xs {
+        display:none!important
+    }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .hidden-sm {
+        display:none!important
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+    .hidden-md {
+        display:none!important
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display:none!important
+    }
+}
+
+/* ball 공통 속성 */
+.ball1 {
+	width: 800px;
+	height: 800px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.ball2 {
+	width: 800px;
+	height: 800px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+.blind {
+	width: 0;
+	height: 0;
+	line-height: 0;
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+}
